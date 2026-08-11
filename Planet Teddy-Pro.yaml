@@ -149,63 +149,11 @@ proxy-groups:
       - "🇬🇧 英国节点"
       - "🚀 手动切换"
       - "🛩️ 其他备用"
+      - "🇭🇰 香港N云智选"
       - "🟢 直连"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 
   - name: "🚀 手动切换"
-    type: select
-    include-all: true
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
-
-  - name: "♻️ 自动选择"
-    type: url-test
-    include-all: true
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
-
-  - name: "🔯 故障转移"
-    type: fallback
-    include-all: true
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
-
-  - name: "🔮 负载均衡"
-    type: load-balance
-    include-all: true
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png
-
-  # ============ 特殊固定 IP 组 ============
-  - name: "🔮 私人固定"
-    type: select
-    include-all: true
-    filter: "(私人|Teddy)"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lock.png
-
-  - name: "🏖️ 私人智选"
-    type: url-test
-    include-all: true
-    filter: "(私人|Teddy)"
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
-
-  - name: "🛩️ IP海外固定"
-    type: select
-    include-all: true
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
-
-  - name: "🛩️ IP国内固定"
-    type: select
-    include-all: true
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
-
-  - name: "🛩️ 其他备用"
     type: select
     include-all: true
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
@@ -246,7 +194,105 @@ proxy-groups:
     filter: "(?i)新加坡|坡|狮城|\\bSG\\b|Singapore"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
 
+ - name: "🛩️ IP海外固定"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
+
+  - name: "🛩️ IP国内固定"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
+
+  - name: "🛩️ 其他备用"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
+
+  - name: "🔮 私人固定"
+    type: select
+    include-all: true
+    filter: "(私人|Teddy)"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lock.png
+    
+  - name: "♻️ 自动选择"
+    type: url-test
+    include-all: true
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+
+  - name: "🔯 故障转移"
+    type: fallback
+    include-all: true
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
+
+  - name: "🔮 负载均衡"
+    type: load-balance
+    include-all: true
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png
+
+  # ============ 特殊固定 IP 组 ============
+
+
+  - name: "🏖️ 私人智选"
+    type: url-test
+    include-all: true
+    filter: "(私人|Teddy)"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+
+ 
+
+  
   # ============ 业务分流组 ============
+  - name: "📢 谷歌服务"
+    type: select
+    proxies:
+      - "🚀 节点选择"
+      - "🇺🇲 美国节点"
+      - "🇭🇰 香港节点"
+      - "🇹🇼 台湾节点"
+      - "🇸🇬 新加坡节点"
+      - "🇯🇵 日本节点"
+      - "🇰🇷 韩国节点"
+      - "🚀 手动切换"
+      - "🛩️ 美国备用"
+      - "🛩️ 日本备用"
+      - "🛩️ 新加坡备用"
+      - "🛩️ 香港备用"
+      - "🛩️ 台湾备用"
+      - "🛩️ 英国备用"
+      - "🛩️ 其他备用"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+
+  - name: "🎦 海外CDN"
+    type: select
+    proxies:
+      - "🚀 节点选择"
+      - "🇺🇲 美国节点"
+      - "🇭🇰 香港节点"
+      - "🇹🇼 台湾节点"
+      - "🇸🇬 新加坡节点"
+      - "🇯🇵 日本节点"
+      - "🇰🇷 韩国节点"
+      - "🚀 手动切换"
+      - "🇭🇰 香港N云智选"
+      - "🛩️ 美国备用"
+      - "🛩️ 日本备用"
+      - "🛩️ 新加坡备用"
+      - "🛩️ 香港备用"
+      - "🛩️ 台湾备用"
+      - "🛩️ 英国备用"
+      - "🛩️ 其他备用"
+    
   - name: "📲 国内IP锁定"
     type: select
     proxies:
@@ -267,25 +313,7 @@ proxy-groups:
       - "🟢 直连"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
 
-  - name: "📢 谷歌服务"
-    type: select
-    proxies:
-      - "🚀 节点选择"
-      - "🇺🇲 美国节点"
-      - "🇭🇰 香港节点"
-      - "🇹🇼 台湾节点"
-      - "🇸🇬 新加坡节点"
-      - "🇯🇵 日本节点"
-      - "🇰🇷 韩国节点"
-      - "🚀 手动切换"
-      - "🛩️ 美国备用"
-      - "🛩️ 日本备用"
-      - "🛩️ 新加坡备用"
-      - "🛩️ 香港备用"
-      - "🛩️ 台湾备用"
-      - "🛩️ 英国备用"
-      - "🛩️ 其他备用"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+  
 
   - name: "📺 YouTube"
     type: select
