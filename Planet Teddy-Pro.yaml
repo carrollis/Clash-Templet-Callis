@@ -1042,19 +1042,34 @@ rule-providers:
   # === 国内IP锁定 ===
   S115Login:
     <<: *class
-    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/master/Clash/Ruleset/115login"
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-115%20Login"
 
   # === 流媒体登录 ===
   GlobalMediaLogin:
     <<: *class
     url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Callis-DIY-GlobalMediaLogin"
 
+ # === Youtube登录 ===
+  Youtube-Login:
+    <<: *class
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-Youtube%20Login"
+
+ # === Tiktok登录 ===
+  Youtube-Login:
+    <<: *class
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-Tiktok%20Login"
+
+ # === CDN媒体资源 ===
+  Youtube-Login:
+    <<: *class
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-CDN%20MediaNetwork"
+
   # === YouTube ===
   YouTube:
     <<: *class
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.list"
 
-  YouTubeMusic:
+  # === YouTube Music===
     <<: *class
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTubeMusic/YouTubeMusic.list"
 
@@ -1079,6 +1094,17 @@ rule-providers:
     <<: *class
     url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/GoogleCN.list"
 
+  Youtube:
+    <<: *class
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.list"
+
+  Youtube-Music:
+    <<: *class
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTubeMusic/YouTubeMusic.list"
+
+
+
+
   # === 国外媒体 ===
   IPTVGlobalSpecific:
     <<: *class
@@ -1091,10 +1117,6 @@ rule-providers:
   IPTVGlobalGeneral:
     <<: *class
     url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Callis-DIY-IPTV(Global-General)"
-
-  MediaCDNGlobal:
-    <<: *class
-    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Callis-DIY-MediaCDN(Global)"
 
   ProxyMedia:
     <<: *class
