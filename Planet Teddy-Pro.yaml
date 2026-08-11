@@ -292,48 +292,6 @@ proxy-groups:
       - "🛩️ 台湾备用"
       - "🛩️ 英国备用"
       - "🛩️ 其他备用"
-    
-  - name: "📲 国内IP锁定"
-    type: select
-    proxies:
-      - "🛩️ IP海外固定"
-      - "🛩️ IP国内固定"
-      - "🚀 节点选择"
-      - "🔮 私人固定"
-      - "🟢 直连"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png
-
-  - name: "📲 海外IP锁定"
-    type: select
-    proxies:
-      - "🛩️ IP海外固定"
-      - "🛩️ IP国内固定"
-      - "🚀 节点选择"
-      - "🔮 私人固定"
-      - "🟢 直连"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
-
-  
-
-  - name: "📺 YouTube"
-    type: select
-    proxies:
-      - "🚀 节点选择"
-      - "🇺🇲 美国节点"
-      - "🇭🇰 香港节点"
-      - "🇹🇼 台湾节点"
-      - "🇸🇬 新加坡节点"
-      - "🇯🇵 日本节点"
-      - "🇰🇷 韩国节点"
-      - "🚀 手动切换"
-      - "🛩️ 美国备用"
-      - "🛩️ 日本备用"
-      - "🛩️ 新加坡备用"
-      - "🛩️ 香港备用"
-      - "🛩️ 台湾备用"
-      - "🛩️ 英国备用"
-      - "🛩️ 其他备用"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
 
   - name: "📲 电报消息"
     type: select
@@ -372,6 +330,28 @@ proxy-groups:
       - "🛩️ 其他备用"
       - "🚀 手动切换"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lock.png
+    
+
+    
+  - name: "📲 国内IP锁定"
+    type: select
+    proxies:
+      - "🛩️ IP海外固定"
+      - "🛩️ IP国内固定"
+      - "🚀 节点选择"
+      - "🔮 私人固定"
+      - "🟢 直连"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png
+
+  - name: "📲 海外IP锁定"
+    type: select
+    proxies:
+      - "🛩️ IP海外固定"
+      - "🛩️ IP国内固定"
+      - "🚀 节点选择"
+      - "🔮 私人固定"
+      - "🟢 直连"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
 
   - name: "🐹 Disney+"
     type: select
@@ -879,6 +859,51 @@ proxy-groups:
     type: url-test
     include-all: true
     filter: "(?i)🇭🇰|香港|港|\\bHK\\b|Hong"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+
+  - name: "🇭🇰 香港N云智选"
+    type: select
+    proxies:
+      - "🇭🇰 香港N云-0队"
+      - "🇭🇰 香港N云-1队"
+      - "🇭🇰 香港N云-2队"
+      - "🇭🇰 香港N云-3队"      
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+
+  - name: "🇭🇰 香港N云-0队"
+    type: url-test
+    include-all: true
+    filter: "(?=.*N云-0)(?=.*(?:港|HK|Hong Kong"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+
+  - name: "🇭🇰 香港N云-1队"
+    type: url-test
+    include-all: true
+    filter: "(?=.*N云-1)(?=.*(?:港|HK|Hong Kong"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+
+  - name: "🇭🇰 香港N云-2队"
+    type: url-test
+    include-all: true
+    filter: "(?=.*N云-2)(?=.*(?:港|HK|Hong Kong"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+
+  - name: "🇭🇰 香港N云-3队"
+    type: url-test
+    include-all: true
+    filter: "(?=.*N云-3)(?=.*(?:港|HK|Hong Kong"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -1472,3 +1497,25 @@ rules:
 
   # === 兜底 ===
   - MATCH,🐟 漏网之鱼
+
+
+
+  - name: "📺 YouTube"
+    type: select
+    proxies:
+      - "🚀 节点选择"
+      - "🇺🇲 美国节点"
+      - "🇭🇰 香港节点"
+      - "🇹🇼 台湾节点"
+      - "🇸🇬 新加坡节点"
+      - "🇯🇵 日本节点"
+      - "🇰🇷 韩国节点"
+      - "🚀 手动切换"
+      - "🛩️ 美国备用"
+      - "🛩️ 日本备用"
+      - "🛩️ 新加坡备用"
+      - "🛩️ 香港备用"
+      - "🛩️ 台湾备用"
+      - "🛩️ 英国备用"
+      - "🛩️ 其他备用"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
