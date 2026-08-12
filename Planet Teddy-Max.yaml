@@ -853,46 +853,46 @@ proxy-groups:
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 
-  - name: "🇭🇰 香港N云智选"
-    type: select
+  - name: "🇭🇰 香港大流量智选"
+    type: url-test
     proxies:
-      - "🇭🇰 香港N云-0队"
-      - "🇭🇰 香港N云-1队"
-      - "🇭🇰 香港N云-2队"
-      - "🇭🇰 香港N云-3队"
+      - "🇭🇰 NCloud香港-0队"
+      - "🇭🇰 NCloud香港-1队"
+      - "🇭🇰 NCloud香港-2队"
+      - "🇭🇰 良心云香港-3队"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 
-  - name: "🇭🇰 香港N云-0队"
+  - name: "🇭🇰 NCloud香港-0队"
     type: url-test
     include-all: true
-    filter: "(?=.*N云-0)(?=.*(?:港|HK|Hong Kong))"
+    filter: "(?=.*NCloud-0)(?=.*(?:港|HK|Hong Kong))"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 
-  - name: "🇭🇰 香港N云-1队"
+  - name: "🇭🇰 NCloud香港-1队"
     type: url-test
     include-all: true
-    filter: "(?=.*N云-1)(?=.*(?:港|HK|Hong Kong))"
+    filter: "(?=.*NCloud-1)(?=.*(?:港|HK|Hong Kong))"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 
-  - name: "🇭🇰 香港N云-2队"
+  - name: "🇭🇰 NCloud香港-2队"
     type: url-test
     include-all: true
-    filter: "(?=.*N云-2)(?=.*(?:港|HK|Hong Kong))"
+    filter: "(?=.*NCloud-2)(?=.*(?:港|HK|Hong Kong))"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 
-  - name: "🇭🇰 香港N云-3队"
+  - name: "🇭🇰 良心云香港-3队"
     type: url-test
     include-all: true
-    filter: "(?=.*N云-3)(?=.*(?:港|HK|Hong Kong))"
+    filter: "(?=.*良心云)(?=.*(?:港|HK|Hong Kong))"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
