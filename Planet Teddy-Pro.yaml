@@ -1077,7 +1077,7 @@ rule-providers:
     <<: *class
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.list"
 
-  YouTube-Music:
+  YouTubeMusic:
     <<: *class
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTubeMusic/YouTubeMusic.list"
 
@@ -1368,7 +1368,7 @@ rules:
   - RULE-SET,IPTVGlobalSpecific,🌍 国外媒体
   - RULE-SET,LinkedIn,🌍 国外媒体
   - RULE-SET,IPTVGlobalGeneral,🌍 国外媒体
-  - RULE-SET,MediaCDNGlobal,🌍 国外媒体
+  - RULE-SET,CDN-Media,🌍 国外媒体
 
   # === 全球直连白名单 ===
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
