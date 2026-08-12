@@ -282,6 +282,7 @@ proxy-groups:
       - "🛩️ 台湾备用"
       - "🛩️ 英国备用"
       - "🛩️ 其他备用"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
 
   - name: "📲 电报消息"
     type: select
