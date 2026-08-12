@@ -178,7 +178,7 @@ proxy-groups:
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Filter.png
 
   - name: "🚀 手动切换"
     type: select
