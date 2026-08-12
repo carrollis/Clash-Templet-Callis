@@ -1038,7 +1038,7 @@ rule-providers:
     url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Callis-DIY-GlobalMediaLogin"
 
  # === Youtube登录 ===
-  Youtube-Login:
+  YouTube-Login:
     <<: *class
     url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-Youtube%20Login"
 
@@ -1348,7 +1348,7 @@ rules:
 
   # === 流媒体/服务IP锁定 ===
   - RULE-SET,GlobalMediaLogin,🔮 流媒体登录
-  - RULE-SET,Youtube-Login,📲 海外IP锁定
+  - RULE-SET,YouTube-Login,📲 海外IP锁定
   - RULE-SET,Tiktok-Login,📺 Tiktok
   - RULE-SET,CDN-Media,🎦 海外CDN
 
