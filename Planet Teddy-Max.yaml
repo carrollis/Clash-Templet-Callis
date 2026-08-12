@@ -320,7 +320,7 @@ proxy-groups:
       - "🛩️ 英国备用"
       - "🛩️ 其他备用"
       - "🚀 手动切换"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lock.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
 
   - name: "📲 国内IP锁定"
     type: select
@@ -330,7 +330,7 @@ proxy-groups:
       - "🚀 节点选择"
       - "🔮 私人固定"
       - "🟢 直连"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CN.png
 
   - name: "📲 海外IP锁定"
     type: select
@@ -340,7 +340,7 @@ proxy-groups:
       - "🚀 节点选择"
       - "🔮 私人固定"
       - "🟢 直连"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
 
   - name: "🐹 Disney+"
     type: select
@@ -707,7 +707,7 @@ proxy-groups:
       - "🛩️ 台湾备用"
       - "🛩️ 英国备用"
       - "🛩️ 其他备用"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Download.png
 
   - name: "🎮 PC平台"
     type: select
