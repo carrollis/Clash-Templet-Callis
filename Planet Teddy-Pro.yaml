@@ -1,5 +1,5 @@
 proxy-providers:
-  {{AIRPORT_NAME}}: 
+  "{{AIRPORT_NAME}}":
     type: http
     interval: 1800
     health-check:
@@ -221,7 +221,7 @@ proxy-groups:
     filter: "(?i)新加坡|坡|狮城|\\bSG\\b|Singapore"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
 
- - name: "🛩️ IP海外固定"
+  - name: "🛩️ IP海外固定"
     type: select
     include-all: true
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
@@ -241,7 +241,7 @@ proxy-groups:
     include-all: true
     filter: "(私人|Teddy)"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lock.png
-  
+
   # ============ 业务分流组 ============
   - name: "📢 谷歌服务"
     type: select
@@ -320,7 +320,7 @@ proxy-groups:
       - "🛩️ 其他备用"
       - "🚀 手动切换"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lock.png
-    
+
   - name: "📲 国内IP锁定"
     type: select
     proxies:
@@ -858,13 +858,13 @@ proxy-groups:
       - "🇭🇰 香港N云-0队"
       - "🇭🇰 香港N云-1队"
       - "🇭🇰 香港N云-2队"
-      - "🇭🇰 香港N云-3队"      
+      - "🇭🇰 香港N云-3队"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 
   - name: "🇭🇰 香港N云-0队"
     type: url-test
     include-all: true
-    filter: "(?=.*N云-0)(?=.*(?:港|HK|Hong Kong"
+    filter: "(?=.*N云-0)(?=.*(?:港|HK|Hong Kong))"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -873,7 +873,7 @@ proxy-groups:
   - name: "🇭🇰 香港N云-1队"
     type: url-test
     include-all: true
-    filter: "(?=.*N云-1)(?=.*(?:港|HK|Hong Kong"
+    filter: "(?=.*N云-1)(?=.*(?:港|HK|Hong Kong))"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -882,7 +882,7 @@ proxy-groups:
   - name: "🇭🇰 香港N云-2队"
     type: url-test
     include-all: true
-    filter: "(?=.*N云-2)(?=.*(?:港|HK|Hong Kong"
+    filter: "(?=.*N云-2)(?=.*(?:港|HK|Hong Kong))"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -891,7 +891,7 @@ proxy-groups:
   - name: "🇭🇰 香港N云-3队"
     type: url-test
     include-all: true
-    filter: "(?=.*N云-3)(?=.*(?:港|HK|Hong Kong"
+    filter: "(?=.*N云-3)(?=.*(?:港|HK|Hong Kong))"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -1347,10 +1347,10 @@ rules:
   - RULE-SET,115Login,📲 国内IP锁定
 
   # === 流媒体/服务IP锁定 ===
-  - RULE-SET, GlobalMediaLogin,🔮 流媒体登录
-  - RULE-SET, Youtube-Login,📲 海外IP锁定
-  - RULE-SET, Tiktok-Login,📺 Tiktok
-  - RULE-SET, CDN-Media,🎦 海外CDN
+  - RULE-SET,GlobalMediaLogin,🔮 流媒体登录
+  - RULE-SET,Youtube-Login,📲 海外IP锁定
+  - RULE-SET,Tiktok-Login,📺 Tiktok
+  - RULE-SET,CDN-Media,🎦 海外CDN
 
   # === YouTube ===
   - RULE-SET,YouTube,📢 谷歌服务
