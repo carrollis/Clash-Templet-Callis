@@ -1348,6 +1348,7 @@ rule-providers:
 # ============================================================
 rules:
   # === 国内IP锁定 ===
+  - DOMAIN,substore-rear.planet-teddy.org,🎯 全球直连
   - RULE-SET,115Login,🔐 国内IP锁定
 
   # === 流媒体/服务IP锁定 ===
