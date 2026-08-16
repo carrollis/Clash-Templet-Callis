@@ -158,7 +158,12 @@ proxy-groups:
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
-
+    
+  - name: "🚀 手动切换"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
+  
   - name: "🔯 故障转移"
     type: fallback
     include-all: true
@@ -174,7 +179,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png
 
   # ============ 特殊固定 IP 组 ============
-
   - name: "🏖️ 私人智选"
     type: url-test
     include-all: true
@@ -183,11 +187,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Filter.png
-
-  - name: "🚀 手动切换"
-    type: select
-    include-all: true
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
 
   - name: "🛩️ 美国备用"
     type: select
