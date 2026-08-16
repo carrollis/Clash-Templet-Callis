@@ -225,12 +225,12 @@ proxy-groups:
     filter: "(?i)新加坡|坡|狮城|\\bSG\\b|Singapore"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
 
-  - name: "🛩️ IP海外固定"
+  - name: "🌎 IP海外固定"
     type: select
     include-all: true
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
 
-  - name: "🛩️ IP国内固定"
+  - name: "🇨🇳 IP国内固定"
     type: select
     include-all: true
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
@@ -329,8 +329,8 @@ proxy-groups:
   - name: "🔐 国内IP锁定"
     type: select
     proxies:
-      - "🛩️ IP海外固定"
-      - "🛩️ IP国内固定"
+      - "🌎 IP海外固定"
+      - "🇨🇳 IP国内固定"
       - "🚀 节点选择"
       - "📍 私人固定"
       - "🟢 直连"
@@ -339,8 +339,8 @@ proxy-groups:
   - name: "🔐 海外IP锁定"
     type: select
     proxies:
-      - "🛩️ IP海外固定"
-      - "🛩️ IP国内固定"
+      - "🌎 IP海外固定"
+      - "🇨🇳 IP国内固定"
       - "🚀 节点选择"
       - "📍 私人固定"
       - "🟢 直连"
@@ -351,7 +351,7 @@ proxy-groups:
     proxies:
       - "🚀 节点选择"
       - "♻️ 自动选择"
-      - "🛩️ IP国内固定"
+      - "🇨🇳 IP国内固定"
       - "🇸🇬 新加坡节点"
       - "🇭🇰 香港节点"
       - "🇹🇼 台湾节点"
@@ -485,7 +485,7 @@ proxy-groups:
     proxies:
       - "🚀 节点选择"
       - "♻️ 自动选择"
-      - "🛩️ IP国内固定"
+      - "🇨🇳 IP国内固定"
       - "🇸🇬 新加坡节点"
       - "🇭🇰 香港节点"
       - "🇹🇼 台湾节点"
@@ -530,7 +530,7 @@ proxy-groups:
     proxies:
       - "🚀 节点选择"
       - "♻️ 自动选择"
-      - "🛩️ IP国内固定"
+      - "🇨🇳 IP国内固定"
       - "🇸🇬 新加坡节点"
       - "🇭🇰 香港节点"
       - "🇹🇼 台湾节点"
