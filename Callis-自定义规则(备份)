@@ -1,0 +1,143 @@
+优先匹配
+
+rules:
+# 游戏加速器
+- DOMAIN-SUFFIX,uu.163.com,DIRECT,no-resolve
+- DOMAIN-SUFFIX,ps.res.netease.com,DIRECT,no-resolve
+- DOMAIN-SUFFIX,uuacc.net,DIRECT,no-resolve
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-KEYWORD,UU加速器,DIRECT,no-resolve
+- DOMAIN-KEYWORD,网易UU,DIRECT,no-resolve
+- PROCESS-NAME,UUAccelerator.exe,DIRECT,no-resolve
+- DOMAIN-SUFFIX,riotgames.com,DIRECT
+- DOMAIN-SUFFIX,game.accelerator.uu.com,DIRECT,no-resolve
+- PROCESS-NAME,UUAccelerator.exe,DIRECT,no-resolve
+- PROCESS-NAME,UUService.exe,DIRECT,no-resolve
+
+# 公司VPN: 罗氏(1-2), 零跑(3)
+- DOMAIN-SUFFIX,portalgp.roche.net,DIRECT,no-resolve
+- PROCESS-NAME,PanGPA.exe,DIRECT,no-resolve
+- PROCESS-NAME,YunShu.exe,DIRECT,no-resolve
+# 私人订阅
+- DOMAIN-SUFFIX,planet-teddy.org,DIRECT
+# Github镜像
+- DOMAIN-SUFFIX,cdn.jsdelivr.net,DIRECT,no-resolve
+- DOMAIN-SUFFIX,fastly.jsdelivr.net,DIRECT,no-resolve
+- DOMAIN-SUFFIX,testingcf.jsdelivr.net,DIRECT,no-resolve
+# Youtube登录地区选择
+- DOMAIN-SUFFIX,s.youtube.com,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,youtubei.googleapis.com,🇨🇳 台湾节点
+# CDN大流量(Twitter/Facebook/Linkedin视频播放&谷歌商店下载)
+- DOMAIN-SUFFIX,video.twimg.com,🎦 海外CDN
+- DOMAIN-SUFFIX,pbs.twimg.com,🎦 海外CDN
+- DOMAIN-SUFFIX,fbcdn.net,🎦 海外CDN
+- DOMAIN-SUFFIX,licdn.com,🎦 海外CDN
+- DOMAIN-SUFFIX,googlevideo.com,🎦 海外CDN
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🎦 海外CDN
+# 微软/Windows-软件更新
+- PROCESS-NAME,MicrosoftEdgeUpdate.exe,Ⓜ️ 微软服务,no-resolve
+- PROCESS-NAME,msedge.exe,Ⓜ️ 微软服务,no-resolve
+- DOMAIN-SUFFIX,live.com,Ⓜ️ 微软服务,no-resolve
+# 苹果/AppStore(iOS & MacOS)-软件更新
+- DOMAIN-SUFFIX,apps.apple.com,🍎 苹果服务,no-resolve
+- DOMAIN-SUFFIX,itunes.apple.com,🍎 苹果服务,no-resolve
+- DOMAIN-SUFFIX,mesu.apple.com,🍎 苹果服务,no-resolve
+- DOMAIN-SUFFIX,swscan.apple.com,🍎 苹果服务,no-resolve
+- DOMAIN-SUFFIX,appldnld.apple.com,🍎 苹果服务,no-resolve
+- DOMAIN-SUFFIX,updates.cdn-apple.com,🍎 苹果服务,no-resolve
+- DOMAIN-SUFFIX,swdist.apple.com,🍎 苹果服务,no-resolve
+- DOMAIN-SUFFIX,swcdn.apple.com,🍎 苹果服务,no-resolve
+# Tiktok登陆
+- DOMAIN-SUFFIX,tiktokv.com,🔮 流媒体登录
+# 个人常用
+- DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
+- DOMAIN-SUFFIX,linkedin.cn,🚀 节点选择
+- DOMAIN-SUFFIX,dmm.co.jp,🛩️ 其他备用
+- DOMAIN-SUFFIX,javdb.com,🛩️ 其他备用
+- DOMAIN-SUFFIX,dmm.co.jp,🛩️ 其他备用
+- DOMAIN-SUFFIX,gemini.google.com,📢 谷歌服务
+- DOMAIN-SUFFIX,generativelanguage.googleapis.com,📢 谷歌服务
+- DOMAIN-KEYWORD,gemini,📢 谷歌服务
+- DOMAIN-KEYWORD,generativelanguage,📢 谷歌服务
+- DOMAIN-KEYWORD,bard,📢 谷歌服务
+- DOMAIN-SUFFIX,googleapis.com,📢 谷歌服务
+- DOMAIN-SUFFIX,gstatic.com,📢 谷歌服务
+- DOMAIN-SUFFIX,jellyfin.org,DIRECT
+- DOMAIN-SUFFIX,me.plexapp.com,DIRECT
+- DOMAIN-SUFFIX,plex.direct,DIRECT
+- DOMAIN-SUFFIX,carrollis.club,DIRECT
+- DOMAIN-SUFFIX,planet-teddy.org,DIRECT
+- SRC-IP-CIDR,107.172.63.13/32,DIRECT
+- SRC-IP-CIDR,8.219.61.171/32,DIRECT
+- SRC-IP-CIDR,110.43.68.200/32,DIRECT
+# 国内AI体验修复
+# 豆包主站强制直连
+- DOMAIN-SUFFIX,doubao.com,DIRECT
+- DOMAIN-SUFFIX,byteimg.com,DIRECT
+- DOMAIN-SUFFIX,bytedance.com,DIRECT
+- DOMAIN-SUFFIX,volcengine.com,DIRECT
+- DOMAIN-SUFFIX,imagex.com,DIRECT
+# 媒体&工具
+- DOMAIN-SUFFIX,imap.gmail.com,🇭🇰 香港节点
+- DOMAIN-SUFFIX,ubuntu.com,🇭🇰 香港节点
+- DOMAIN-SUFFIX,archive.ubuntu.com,🇭🇰 香港节点
+- DOMAIN-SUFFIX,zerotier.com,🇭🇰 香港节点
+- DOMAIN-SUFFIX,pool.ntp.org,DIRECT
+- DOMAIN-SUFFIX,bloomberg.com,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,live.com,🇭🇰 香港节点
+- DOMAIN-SUFFIX,espn.com,🛩️ 美国备用
+- DOMAIN-SUFFIX,espn.hb.omtrdc.net,🛩️ 美国备用
+- DOMAIN-SUFFIX,espncdn.com,🛩️ 美国备用
+- DOMAIN-SUFFIX,gitv.tv,DIRECT
+- DOMAIN-SUFFIX,phncdn.com,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,phprcdn.com,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,pornhub.com,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,pornhubpremium.com,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,discord.gg,🇭🇰 香港节点
+- DOMAIN-SUFFIX,discordapp.com,🇭🇰 香港节点
+- DOMAIN-SUFFIX,discordapp.net,🇭🇰 香港节点
+- DOMAIN-SUFFIX,speedtest.cn,DIRECT
+- DOMAIN-SUFFIX,utorrent.com,DIRECT
+- DOMAIN-SUFFIX,ottdns.com,DIRECT
+- DOMAIN-SUFFIX,v1.mk,🚀 节点选择
+- DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
+- SRC-IP-CIDR,8.216.126.201/32,DIRECT
+# 美国IPTV
+- DOMAIN-SUFFIX,tvpass.org,🇺🇲 美国节点
+- DOMAIN-SUFFIX,smart.pendy.dpdns.org,🇺🇲 美国节点
+- DOMAIN-SUFFIX,sport.pendy.dpdns.org,🇺🇲 美国节点
+- DOMAIN-SUFFIX,docker.livednow.dpdns.org,🇺🇲 美国节点
+- DOMAIN-SUFFIX,4gtv.livednow.dpdns.org,🇺🇲 美国节点
+- DOMAIN-SUFFIX,iptv.mydiver.eu.org,🇺🇲 美国节点
+# 台湾4GTV(IPTV)
+- DOMAIN-SUFFIX,app-measurement.com,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,ftv.com.tw,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,4gtv.tv,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,hinet.net,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,onead.com.tw,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,nowe.com,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,now.com,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,now-tv.com,🇨🇳 台湾节点
+- DOMAIN-SUFFIX,nowestatic.com,🇨🇳 台湾节点
+# 机场订阅地址
+- DOMAIN-SUFFIX,flyintpro01.com,🇭🇰 香港节点
+# 交易平台:长桥
+- DOMAIN-SUFFIX,longbridgeapp.com,🇭🇰 香港节点
+- DOMAIN-SUFFIX,lbkrs.com,🇭🇰 香港节点
+# DOMAIN-SUFFIX,tableau.com,DIRECT
+# DOMAIN-SUFFIX,salesforce.com,DIRECT
+# 临时-足球直播源
+- DOMAIN-KEYWORD,haoyishu.org,DIRECT
+- IP-CIDR,181.233.125.54/32,📲 国内IP锁定,no-resolve
+- IP-CIDR,148.224.24.225/32,📲 国内IP锁定,no-resolve
+- IP-CIDR,198.255.87.242/32,📲 国内IP锁定,no-resolve
+- IP-CIDR,206.212.244.101/32,📲 国内IP锁定,no-resolve
+- IP-CIDR,149.30.255.81/32,📲 国内IP锁定,no-resolve
+
+补充规则
+rules:
+- DOMAIN-SUFFIX,ipleak.net,🇭🇰 香港节点
+- GEOIP,private,DIRECT,no-resolve
+- GEOSITE,private,DIRECT
+- GEOSITE,CN,DIRECT
+- GEOIP,CN,DIRECT,no-resolve
