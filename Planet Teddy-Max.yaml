@@ -304,7 +304,7 @@ proxy-groups:
       - "🟢 直连"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
 
-  - name: "🔮 流媒体登录"
+  - name: "🔑 流媒体登录"
     type: select
     proxies:
       - "📍 私人固定"
@@ -326,7 +326,7 @@ proxy-groups:
       - "🚀 手动切换"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
 
-  - name: "📲 国内IP锁定"
+  - name: "🔐 国内IP锁定"
     type: select
     proxies:
       - "🛩️ IP海外固定"
@@ -336,7 +336,7 @@ proxy-groups:
       - "🟢 直连"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CN.png
 
-  - name: "📲 海外IP锁定"
+  - name: "🔐 海外IP锁定"
     type: select
     proxies:
       - "🛩️ IP海外固定"
@@ -1349,11 +1349,11 @@ rule-providers:
 # ============================================================
 rules:
   # === 国内IP锁定 ===
-  - RULE-SET,115Login,📲 国内IP锁定
+  - RULE-SET,115Login,🔐 国内IP锁定
 
   # === 流媒体/服务IP锁定 ===
-  - RULE-SET,GlobalMediaLogin,🔮 流媒体登录
-  - RULE-SET,YouTube-Login,📲 海外IP锁定
+  - RULE-SET,GlobalMediaLogin,🔑 流媒体登录
+  - RULE-SET,YouTube-Login,🔐 海外IP锁定
   - RULE-SET,Tiktok-Login,📺 Tiktok
   - RULE-SET,CDN-Media,🪩 海外CDN
 
