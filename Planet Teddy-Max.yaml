@@ -86,6 +86,9 @@ dns:
     - 119.29.29.29
 
   fake-ip-filter:
+    - 'substore-rear.planet-teddy.org'
+    - 'sub-store-keisuke.up.railway.app'
+    - '*.lan'
     - '*.lan'
     - '*.local'
     - 'doh.pub'
@@ -1347,7 +1350,7 @@ rule-providers:
 # 分流规则（严格按照 INI 原始顺序）
 # ============================================================
 rules:
-  # === 国内IP锁定 ===
+  - DOMAIN,sub-store-keisuke.up.railway.app,🎯 全球直连
   - DOMAIN,substore-rear.planet-teddy.org,🎯 全球直连
   - RULE-SET,115Login,🔐 国内IP锁定
 
