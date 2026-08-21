@@ -860,7 +860,7 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 
   - name: "🇭🇰 香港大流量智选"
-    type: url-test
+    type: select
     proxies:
       - "🇭🇰 NCloud香港-0队"
       - "🇭🇰 NCloud香港-1队"
