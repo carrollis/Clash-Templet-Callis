@@ -99,6 +99,7 @@ dns:
     - '+.msftncsi.com'
     - '+.msftconnecttest.com'
     - '+.push.apple.com'
+    - '*.planet-teddy.org'
 
   nameserver:
     - 'https://119.29.29.29/dns-query'
