@@ -1043,7 +1043,7 @@ rule-providers:
   # === 流媒体登录 ===
   GlobalMediaLogin:
     <<: *class
-    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Callis-DIY-GlobalMediaLogin"
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-GlobalMediaLogin"
 
  # === Youtube登录 ===
   YouTube-Login:
@@ -1355,7 +1355,7 @@ rules:
 
   # === 流媒体/服务IP锁定 ===
   - RULE-SET,GlobalMediaLogin,🔑 流媒体登录
-  - RULE-SET,YouTube-Login,🔐 海外IP锁定
+  - RULE-SET,YouTube-Login,📢 谷歌服务
   - RULE-SET,Tiktok-Login,📺 Tiktok
   - RULE-SET,CDN-Media,🪩 海外CDN
 
