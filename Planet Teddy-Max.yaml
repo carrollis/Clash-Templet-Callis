@@ -1356,7 +1356,7 @@ rules:
 
   # === 流媒体/服务IP锁定 ===
   - RULE-SET,GlobalMediaLogin,🔑 流媒体登录
-  - RULE-SET,YouTube-Login,📢 谷歌服务
+  - RULE-SET,YouTube-Login,🔑 流媒体登录
   - RULE-SET,Tiktok-Login,📺 Tiktok
   - RULE-SET,CDN-Media,🪩 海外CDN
 
