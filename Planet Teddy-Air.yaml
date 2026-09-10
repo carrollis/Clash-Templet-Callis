@@ -148,7 +148,6 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇺🇲 美国节点"
       - "🇰🇷 韩国节点"
-      - "🇬🇧 英国节点"
       - "🚀 手动切换"
       - "🛩️ 其他备用"
       - "大流量智选"
@@ -206,8 +205,9 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇰🇷 韩国节点"
       - "🚀 手动切换"
-      - "📍 私人固定"
+      - "大流量智选"
       - "🛩️ 其他备用"
+      - "📍 私人固定"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 
   - name: "🪩 海外CDN"
@@ -229,14 +229,14 @@ proxy-groups:
     type: select
     proxies:
       - "🚀 节点选择"
-      - "♻️ 自动选择"
-      - "🇸🇬 新加坡节点"
+      - "🇺🇲 美国节点"
       - "🇭🇰 香港节点"
       - "🇹🇼 台湾节点"
+      - "🇸🇬 新加坡节点"
       - "🇯🇵 日本节点"
-      - "🇺🇲 美国节点"
       - "🇰🇷 韩国节点"
       - "🚀 手动切换"
+      - "大流量智选"
       - "🛩️ 其他备用"
       - "🟢 直连"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
@@ -261,34 +261,30 @@ proxy-groups:
     type: select
     proxies:
       - "🚀 节点选择"
-      - "♻️ 自动选择"
-      - "🇸🇬 新加坡节点"
+      - "🇺🇲 美国节点"
       - "🇭🇰 香港节点"
       - "🇹🇼 台湾节点"
+      - "🇸🇬 新加坡节点"
       - "🇯🇵 日本节点"
-      - "🇺🇲 美国节点"
       - "🇰🇷 韩国节点"
       - "🚀 手动切换"
+      - "大流量智选"
       - "🛩️ 其他备用"
-      - "🟢 直连"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
 
   - name: "🎥 奈飞视频"
     type: select
     proxies:
       - "🚀 节点选择"
-      - "♻️ 自动选择"
-      - "🇨🇳 IP国内固定"
-      - "🇸🇬 新加坡节点"
+      - "🇺🇲 美国节点"
       - "🇭🇰 香港节点"
       - "🇹🇼 台湾节点"
+      - "🇸🇬 新加坡节点"
       - "🇯🇵 日本节点"
-      - "🇺🇲 美国节点"
       - "🇰🇷 韩国节点"
       - "🚀 手动切换"
-      - "🛩️ 其他备用"
       - "大流量智选"
-      - "🟢 直连"
+      - "🛩️ 其他备用"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
 
   - name: "📺 哔哩哔哩"
@@ -311,6 +307,8 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇰🇷 韩国节点"
       - "🚀 手动切换"
+      - "大流量智选"
+      - "🛩️ 其他备用"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
 
   - name: "🍎 苹果服务"
@@ -325,6 +323,8 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇰🇷 韩国节点"
       - "🚀 手动切换"
+      - "大流量智选"
+      - "🛩️ 其他备用"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
 
   - name: "🔮 AI服务"
@@ -338,12 +338,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇰🇷 韩国节点"
       - "🚀 手动切换"
-      - "🛩️ 美国备用"
-      - "🛩️ 日本备用"
-      - "🛩️ 新加坡备用"
-      - "🛩️ 香港备用"
-      - "🛩️ 台湾备用"
-      - "🛩️ 英国备用"
+      - "大流量智选"
       - "🛩️ 其他备用"
       - "🟢 直连"
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
@@ -476,15 +471,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
-
-  - name: "🇬🇧 英国节点"
-    type: url-test
-    include-all: true
-    filter: "(?i)🇬🇧|英|英国|不列颠|大不列颠|\\bUK\\b|\\bEN\\b|Britain"
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png
 
 # ============================================================
 # 规则集锚点
