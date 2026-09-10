@@ -245,7 +245,6 @@ proxy-groups:
     type: select
     proxies:
       - "📍 私人固定"
-      - "🏖️ 私人智选"
       - "🚀 节点选择"
       - "🇭🇰 香港节点"
       - "🇹🇼 台湾节点"
