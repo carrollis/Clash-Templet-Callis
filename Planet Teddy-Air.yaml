@@ -372,15 +372,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
 
   # ============ 地区节点分组 (url-test 自动择优) ============
-  - name: "🇭🇰 香港节点"
-    type: url-test
-    include-all: true
-    filter: "(?i)🇭🇰|香港|港|\\bHK\\b|Hong"
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
-
   - name: "大流量智选"
     type: select
     proxies:
@@ -421,6 +412,15 @@ proxy-groups:
     type: url-test
     include-all: true
     filter: "(?=.*良心云)"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+
+  - name: "🇭🇰 香港节点"
+    type: url-test
+    include-all: true
+    filter: "(?i)🇭🇰|香港|港|\\bHK\\b|Hong"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
