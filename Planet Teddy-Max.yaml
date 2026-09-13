@@ -1463,7 +1463,7 @@ rules:
   - RULE-SET,AbemaTV,🎶 AbemaTV
 
   # === 游戏平台(登录) ===
-  - RULE-SET,SteamCN-VerificationSteamCN-Verification,🎮 PC平台
+  - RULE-SET,SteamCN-Verification,🎮 PC平台
 
   # === 游戏下载 ===
   - RULE-SET,GameDownloadCallis,🎮 国外下载
