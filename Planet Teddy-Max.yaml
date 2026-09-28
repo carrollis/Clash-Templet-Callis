@@ -207,8 +207,10 @@ proxy-groups:
   - name: "🛩️ 英国备用"
     type: select
     include-all: true
-    filter: "(?i)英|英|英国|不列颠|大不列颠|日不落|\\bUK\\b|\\bEN\\b|Britain"
+    filter: "(?i)英|(?i)GB|(?i)UK|英|英国|不列颠|大不列颠|日不落|\\bUK\\b|\\bEN\\b|Britain"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png
+
+    SSRDOG | 🇬🇧 UK
 
   - name: "🛩️ 香港备用"
     type: select
