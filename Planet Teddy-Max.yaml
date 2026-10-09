@@ -862,7 +862,7 @@ proxy-groups:
       - "NCloud-2队"
       - "良心云-3队"
       - "Nowhere-1队-潘"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
   - name: "NCloud-0队"
     type: url-test
