@@ -854,15 +854,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
 
   # ============ 地区节点分组 (url-test 自动择优) ============
-  - name: "🇭🇰 香港节点"
-    type: url-test
-    include-all: true
-    filter: "(?i)🇭🇰|香港|港|\\bHK\\b|Hong"
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
-
   - name: "大流量智选"
     type: select
     proxies:
@@ -871,7 +862,7 @@ proxy-groups:
       - "NCloud-2队"
       - "良心云-3队"
       - "Nowhere-1队-潘"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
 
   - name: "NCloud-0队"
     type: url-test
@@ -880,7 +871,7 @@ proxy-groups:
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
 
   - name: "NCloud-1队"
     type: url-test
@@ -889,7 +880,7 @@ proxy-groups:
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
 
   - name: "NCloud-2队"
     type: url-test
@@ -898,7 +889,7 @@ proxy-groups:
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
 
   - name: "良心云-3队"
     type: url-test
@@ -907,7 +898,7 @@ proxy-groups:
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
 
   - name: "Nowhere-1队-潘"
     type: url-test
@@ -916,7 +907,16 @@ proxy-groups:
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png  
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
+  
+  - name: "🇭🇰 香港节点"
+    type: url-test
+    include-all: true
+    filter: "(?i)🇭🇰|香港|港|\\bHK\\b|Hong"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 
   - name: "🇹🇼 台湾节点"
     type: url-test
