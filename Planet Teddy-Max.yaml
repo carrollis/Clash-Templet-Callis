@@ -870,6 +870,7 @@ proxy-groups:
       - "NCloud-1队"
       - "NCloud-2队"
       - "良心云-3队"
+      - "Nowhere-1队-潘"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 
   - name: "NCloud-0队"
@@ -907,6 +908,15 @@ proxy-groups:
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+
+  - name: "Nowhere-1队-潘"
+    type: url-test
+    include-all: true
+    filter: "(?=.*Nowhere)"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png  
 
   - name: "🇹🇼 台湾节点"
     type: url-test
