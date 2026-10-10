@@ -1384,7 +1384,8 @@ rule-providers:
 rules:
   - RULE-SET,115Login,🔐 国内IP锁定
 
-  # === Sub-Store ===
+  # === Sub-Store/机场订阅域名 ===
+  - DOMAIN,sub1.sntp.me,🎯 全球直连
   - DOMAIN,substore-rear.planet-teddy.org,🗄️ Sub-Store
   
   # === 流媒体/服务IP锁定 ===
