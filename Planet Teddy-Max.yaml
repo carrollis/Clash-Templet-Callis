@@ -191,6 +191,11 @@ proxy-groups:
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Filter.png
+    
+   - name: "🗄️ Sub-Store"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stack.png
 
   - name: "🛩️ 美国备用"
     type: select
@@ -1003,7 +1008,7 @@ rule-providers:
   AWAvenueAds:
     <<: *class
     url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml"
-
+  
   # === 直连白名单 ===
   LocalAreaNetwork:
     <<: *class
@@ -1379,6 +1384,9 @@ rule-providers:
 rules:
   - RULE-SET,115Login,🔐 国内IP锁定
 
+  # === Sub-Store ===
+  - DOMAIN,substore-rear.planet-teddy.org,🗄️ Sub-Store
+  
   # === 流媒体/服务IP锁定 ===
   - RULE-SET,CDN-Media,🪩 海外CDN  
   - RULE-SET,GlobalMediaLogin,🔑 流媒体登录
