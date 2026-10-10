@@ -1378,10 +1378,6 @@ rules:
   - RULE-SET,Tiktok-Login,📺 Tiktok
   - RULE-SET,CDN-Media,🪩 海外CDN
 
-  # === YouTube ===
-  #- RULE-SET,YouTube,📢 谷歌服务
-  #- RULE-SET,YouTubeMusic,📢 谷歌服务
-
   # === 谷歌服务 ===
   - RULE-SET,GoogleFCM,📢 谷歌服务
   - RULE-SET,GooglePlayStore,📢 谷歌服务
