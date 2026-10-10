@@ -192,7 +192,7 @@ proxy-groups:
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Filter.png
     
-   - name: "🗄️ Sub-Store"
+  - name: "🗄️ Sub-Store"
     type: select
     include-all: true
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stack.png
