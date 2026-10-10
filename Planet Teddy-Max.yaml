@@ -1038,6 +1038,14 @@ rule-providers:
     <<: *class
     url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Callis-DIY-Domestic"
 
+  Subscribe-Local:
+    <<: *class
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Subscribe-Local"
+
+  Subscribe-Proxy:
+    <<: *class
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Subscribe-Proxy"
+
   IPTVMainland:
     <<: *class
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/IPTVMainland/IPTVMainland.list"
@@ -1385,8 +1393,8 @@ rules:
   - RULE-SET,115Login,🔐 国内IP锁定
 
   # === Sub-Store/机场订阅域名 ===
-  - DOMAIN,sub1.sntp.me,🎯 全球直连
-  - DOMAIN,substore-rear.planet-teddy.org,🗄️ Sub-Store
+  - RULE-SET,Subscribe-Local,🎯 全球直连
+  - RULE-SET,Subscribe-Proxy,🗄️ Sub-Store
   
   # === 流媒体/服务IP锁定 ===
   - RULE-SET,CDN-Media,🪩 海外CDN  
