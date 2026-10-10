@@ -1371,12 +1371,12 @@ rules:
   - RULE-SET,115Login,🔐 国内IP锁定
 
   # === 流媒体/服务IP锁定 ===
+  - RULE-SET,CDN-Media,🪩 海外CDN  
   - RULE-SET,GlobalMediaLogin,🔑 流媒体登录
   - RULE-SET,YouTube-Login,🔑 流媒体登录
   - RULE-SET,YouTube,🔑 流媒体登录
   - RULE-SET,YouTubeMusic,🔑 流媒体登录
   - RULE-SET,Tiktok-Login,📺 Tiktok
-  - RULE-SET,CDN-Media,🪩 海外CDN
 
   # === 谷歌服务 ===
   - RULE-SET,GoogleFCM,📢 谷歌服务
