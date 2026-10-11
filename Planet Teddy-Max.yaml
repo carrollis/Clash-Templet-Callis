@@ -862,50 +862,51 @@ proxy-groups:
   - name: "大流量智选"
     type: select
     proxies:
-      - "NCloud-0队"
-      - "NCloud-1队"
-      - "NCloud-2队"
-      - "良心云-3队"
-      - "Nowhere-1队-潘"
+      - "队0－NCloud"
+      - "队1－NCloud"
+      - "队2－NCloud"
+      - "队3－良心云"
+      - "队1－吹雪云"
+      - "队1－Nowhere"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
-  - name: "NCloud-0队"
+  - name: "队0－NCloud"
     type: url-test
     include-all: true
-    filter: "(?=.*NCloud-0)"
+    filter: "(?=.*队0)"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
 
-  - name: "NCloud-1队"
+  - name: "队1－NCloud"
     type: url-test
     include-all: true
-    filter: "(?=.*NCloud-1)"
+    filter: "(?=.*队1)"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
 
-  - name: "NCloud-2队"
+  - name: "队2－NCloud"
     type: url-test
     include-all: true
-    filter: "(?=.*NCloud-2)"
+    filter: "(?=.*队2)"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
 
-  - name: "良心云-3队"
+  - name: "队3－良心云"
     type: url-test
     include-all: true
-    filter: "(?=.*良心云)"
+    filter: "(?=.*队3)"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
     
-  - name: "吹雪云-1队-潘"
+  - name: "队1－吹雪云"
     type: url-test
     include-all: true
     filter: "(?=.*吹雪云)"
@@ -914,7 +915,7 @@ proxy-groups:
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
     
-  - name: "Nowhere-1队-潘"
+  - name: "队1－Nowhere"
     type: url-test
     include-all: true
     filter: "(?=.*Nowhere)"
