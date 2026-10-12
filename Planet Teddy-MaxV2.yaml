@@ -192,7 +192,7 @@ proxy-groups:
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Filter.png
     
-  - name: "🗄️ Sub-Store"
+  - name: "🗄️ 订阅更新"
     type: select
     include-all: true
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stack.png
@@ -400,7 +400,7 @@ proxy-groups:
       - "🛩️ 英国备用"
       - "🛩️ 其他备用"
       - "🟢 直连"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO_Max.png
 
   - name: "🎵 Spotify"
     type: select
@@ -1262,9 +1262,13 @@ rule-providers:
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list"
 
   # === AI服务 ===
-  OpenAI:
+  OpenAI-1:
     <<: *class
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+    
+  OpenAI-2:
+    <<: *class
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/OpenAi.list"
 
   Discord:
     <<: *class
@@ -1277,6 +1281,11 @@ rule-providers:
   Gemini:
     <<: *class
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list"
+
+  General-AI:
+    <<: *class
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/AI.list"
+
 
   # === AbemaTV ===
   Abema:
@@ -1402,7 +1411,7 @@ rules:
 
   # === Sub-Store/机场订阅域名 ===
   - RULE-SET,Subscribe-Local,🎯 全球直连
-  - RULE-SET,Subscribe-Proxy,🗄️ Sub-Store
+  - RULE-SET,Subscribe-Proxy,🗄️ 订阅更新
   
   # === 流媒体/服务IP锁定 ===
   - RULE-SET,CDN-Media,🪩 海外CDN  
@@ -1497,10 +1506,12 @@ rules:
   - RULE-SET,NetEaseMusic,🎶 网易音乐
 
   # === AI服务 ===
-  - RULE-SET,OpenAI,🔮 AI服务
+  - RULE-SET,OpenAI-1,🔮 AI服务
+  - RULE-SET,OpenAI-2,🔮 AI服务
   - RULE-SET,Discord,🔮 AI服务
   - RULE-SET,Claude,🔮 AI服务
   - RULE-SET,Gemini,🔮 AI服务
+  - RULE-SET,General-AI,🔮 AI服务
 
   # === AbemaTV ===
   - RULE-SET,Abema,🎶 AbemaTV
