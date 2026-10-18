@@ -1430,8 +1430,8 @@ rules:
   - RULE-SET,Subscribe-Proxy,🗄️ Sub-Store
   
   # === 流媒体/服务IP锁定 ===
-  - RULE-SET,CDN-Media-smart,🪩 海外CDN-智能
   - RULE-SET,CDN-Media-region,🪩 海外CDN-锁区
+  - RULE-SET,CDN-Media-smart,🪩 海外CDN-智能
   - RULE-SET,GlobalMediaLogin,🔑 流媒体登录
   - RULE-SET,YouTube-Login,🔑 流媒体登录
   - RULE-SET,YouTube,🔑 流媒体登录
