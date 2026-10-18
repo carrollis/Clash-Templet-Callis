@@ -220,6 +220,17 @@ proxy-groups:
       - "🛩️ 其他备用"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
 
+  - name: "💧 大流量智选"
+    type: select
+    proxies:
+      - "队0－NCloud"
+      - "队1－NCloud"
+      - "队2－NCloud"
+      - "队3－良心云"
+      - "队4－吹雪云"
+      - "队4－Nowhere"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
+
   - name: "📲 电报消息"
     type: select
     proxies:
@@ -809,17 +820,7 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png
 
   # ============ 地区节点分组 (url-test 自动择优) ============
-  - name: "💧 大流量智选"
-    type: select
-    proxies:
-      - "队0－NCloud"
-      - "队1－NCloud"
-      - "队2－NCloud"
-      - "队3－良心云"
-      - "队4－吹雪云"
-      - "队4－Nowhere"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
-
+ 
   - name: "队0－NCloud"
     type: url-test
     include-all: true
