@@ -277,7 +277,28 @@ proxy-groups:
       - "🛩️ 其他备用"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 
-  - name: "🪩 海外CDN"
+  - name: "🪩 海外CDN-智能"
+    type: select
+    proxies:
+      - "🚀 节点选择"
+      - "🇺🇲 美国节点"
+      - "🇭🇰 香港节点"
+      - "🇹🇼 台湾节点"
+      - "🇸🇬 新加坡节点"
+      - "🇯🇵 日本节点"
+      - "🇰🇷 韩国节点"
+      - "🚀 手动切换"
+      - "💧 大流量智选"
+      - "🛩️ 美国备用"
+      - "🛩️ 日本备用"
+      - "🛩️ 新加坡备用"
+      - "🛩️ 香港备用"
+      - "🛩️ 台湾备用"
+      - "🛩️ 英国备用"
+      - "🛩️ 其他备用"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
+
+  - name: "🪩 海外CDN-锁区"
     type: select
     proxies:
       - "🚀 节点选择"
@@ -1099,9 +1120,13 @@ rule-providers:
     url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-Tiktok%20Login"
 
  # === CDN媒体资源 ===
-  CDN-Media:
+  CDN-Media-smart:
     <<: *class
     url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-CDN%20MediaNetwork"
+
+  CDN-Media-region:
+    <<: *class
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-CDN%20MediaNetwork-region"
 
   # === 谷歌服务 ===
   GoogleFCM:
@@ -1405,7 +1430,8 @@ rules:
   - RULE-SET,Subscribe-Proxy,🗄️ Sub-Store
   
   # === 流媒体/服务IP锁定 ===
-  - RULE-SET,CDN-Media,🪩 海外CDN  
+  - RULE-SET,CDN-Media-smart,🪩 海外CDN-智能
+  - RULE-SET,CDN-Media-region,🪩 海外CDN-锁区
   - RULE-SET,GlobalMediaLogin,🔑 流媒体登录
   - RULE-SET,YouTube-Login,🔑 流媒体登录
   - RULE-SET,YouTube,🔑 流媒体登录
