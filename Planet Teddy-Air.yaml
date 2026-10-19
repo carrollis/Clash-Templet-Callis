@@ -210,6 +210,27 @@ proxy-groups:
       - "队4－Nowhere"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
+  - name: "🔮 AI服务"
+    type: select
+    proxies:
+      - "🚀 节点选择"
+      - "🇺🇲 美国节点"
+      - "🇭🇰 香港节点"
+      - "🇹🇼 台湾节点"
+      - "🇸🇬 新加坡节点"
+      - "🇯🇵 日本节点"
+      - "🇰🇷 韩国节点"
+      - "🚀 手动切换"
+      - "🛩️ 美国备用"
+      - "🛩️ 日本备用"
+      - "🛩️ 新加坡备用"
+      - "🛩️ 香港备用"
+      - "🛩️ 台湾备用"
+      - "🛩️ 英国备用"
+      - "🛩️ 其他备用"
+      - "🟢 直连"
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+
   - name: "📲 电报消息"
     type: select
     proxies:
@@ -305,6 +326,12 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
 
   # ============ 拦截与直连组 ============
+
+  - name: "🗄️ 订阅更新"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stack.png
+  
   - name: "🛑 广告拦截"
     type: select
     proxies:
@@ -884,7 +911,7 @@ rules:
   - RULE-SET,YouTube-Login,🔑 流媒体登录
   - RULE-SET,YouTube,🔑 流媒体登录
   - RULE-SET,YouTubeMusic,🔑 流媒体登录
-  - RULE-SET,Tiktok-Login,📺 Tiktok
+  - RULE-SET,Tiktok-Login,🔑 流媒体登录
 
   # === 谷歌服务 ===
   - RULE-SET,GoogleFCM,📢 谷歌服务
@@ -922,7 +949,7 @@ rules:
   - RULE-SET,TeamViewer,🎯 全球直连
 
   # === BBC ===
-  - RULE-SET,BBC,📺 BBC
+  - RULE-SET,BBC,🌍 国外媒体
 
   # === 微软服务 ===
   - RULE-SET,MicrosoftEdge,Ⓜ️ 微软服务
@@ -940,35 +967,35 @@ rules:
   - RULE-SET,AppleMusic,🍎 苹果服务
 
   # === GitHub ===
-  - RULE-SET,GitHub,🔮 Github
+  - RULE-SET,GitHub,🌍 国外媒体
 
   # === Telegram ===
-  - RULE-SET,Telegram,📲 电报消息
+  - RULE-SET,Telegram,🌍 国外媒体
 
   # === Disney+ ===
-  - RULE-SET,DisneyPlusAdditional,🐹 Disney+
-  - RULE-SET,DisneyPlus,🐹 Disney+
+  - RULE-SET,DisneyPlusAdditional,🌍 国外媒体
+  - RULE-SET,DisneyPlus,🌍 国外媒体
 
   # === HBO ===
-  - RULE-SET,HBOAdditional,🎦 HBO
-  - RULE-SET,HBO,🎦 HBO
+  - RULE-SET,HBOAdditional,🌍 国外媒体
+  - RULE-SET,HBO,🌍 国外媒体
 
   # === Spotify ===
-  - RULE-SET,Spotify,🎵 Spotify
+  - RULE-SET,Spotify,🌍 国外媒体
 
   # === DAZN ===
-  - RULE-SET,DAZN,📺 DAZN
+  - RULE-SET,DAZN,🌍 国外媒体
 
   # === 亚马逊 ===
-  - RULE-SET,Amazon,📲 亚马逊
-  - RULE-SET,AmazonIp,📲 亚马逊
-  - RULE-SET,AmazonPrimeVideo,📲 亚马逊
+  - RULE-SET,Amazon,🌍 国外媒体
+  - RULE-SET,AmazonIp,🌍 国外媒体
+  - RULE-SET,AmazonPrimeVideo,🌍 国外媒体
 
   # === TikTok ===
-  - RULE-SET,TikTok,📺 Tiktok
+  - RULE-SET,TikTok,🌍 国外媒体
 
   # === 网易音乐 ===
-  - RULE-SET,NetEaseMusic,🎶 网易音乐
+  # - RULE-SET,NetEaseMusic,🎶 网易音乐
 
   # === AI服务 ===
   - RULE-SET,OpenAI,🔮 AI服务
@@ -977,43 +1004,43 @@ rules:
   - RULE-SET,Gemini,🔮 AI服务
 
   # === AbemaTV ===
-  - RULE-SET,Abema,🎶 AbemaTV
-  - RULE-SET,AbemaTV,🎶 AbemaTV
+  - RULE-SET,Abema,🌍 国外媒体
+  - RULE-SET,AbemaTV,🌍 国外媒体
 
   # === 游戏平台(登录) ===
-  - RULE-SET,SteamCN-Verification,🎮 PC平台
+  #- RULE-SET,SteamCN-Verification,🎮 PC平台
 
   # === 游戏下载 ===
-  - RULE-SET,GameDownloadCallis,🎮 国外下载
-  - RULE-SET,SteamDownloadCallis,🎮 国内下载
-  - RULE-SET,GameDownload,🎮 国外下载
-  - RULE-SET,GameDownloadCN,🎮 国内下载
+  #- RULE-SET,GameDownloadCallis,🎮 国外下载
+  #- RULE-SET,SteamDownloadCallis,🎮 国内下载
+  #- RULE-SET,GameDownload,🎮 国外下载
+  #- RULE-SET,GameDownloadCN,🎮 国内下载
 
   # === 游戏平台 ===
-  - RULE-SET,SteamCN,🎮 PC平台
-  - RULE-SET,Epic,🎮 PC平台
-  - RULE-SET,Sony,🎮 PS平台
-  - RULE-SET,EA,🎮 PC平台
-  - RULE-SET,Battle,🎮 PC平台
-  - RULE-SET,Origin,🎮 PC平台
-  - RULE-SET,Steam,🎮 PC平台
-  - RULE-SET,SteamCNBM,🎮 PC平台
-  - RULE-SET,Nintendo,🎮 任天堂平台
-  - RULE-SET,Xbox,🎮 Xbox平台
-  - RULE-SET,DIYGame,🎮 海外手游
+  #- RULE-SET,SteamCN,🎮 PC平台
+  #- RULE-SET,Epic,🎮 PC平台
+  #- RULE-SET,Sony,🎮 PS平台
+  #- RULE-SET,EA,🎮 PC平台
+  #- RULE-SET,Battle,🎮 PC平台
+  #- RULE-SET,Origin,🎮 PC平台
+  #- RULE-SET,Steam,🎮 PC平台
+  #- RULE-SET,SteamCNBM,🎮 PC平台
+  #- RULE-SET,Nintendo,🎮 任天堂平台
+  #- RULE-SET,Xbox,🎮 Xbox平台
+  #- RULE-SET,DIYGame,🎮 海外手游
 
   # === 奈飞 ===
-  - RULE-SET,Netflix,🎥 奈飞视频
-  - RULE-SET,NetflixIP,🎥 奈飞视频
-  - RULE-SET,NetflixIPAdd,🎥 奈飞视频
-  - RULE-SET,AmazonIp,🎥 奈飞视频
+  - RULE-SET,Netflix,🌍 国外媒体
+  - RULE-SET,NetflixIP,🌍 国外媒体
+  - RULE-SET,NetflixIPAdd,🌍 国外媒体
+  - RULE-SET,AmazonIp,🌍 国外媒体
 
   # === 巴哈姆特 ===
-  - RULE-SET,Bahamut,📺 巴哈姆特
+  - RULE-SET,Bahamut,🌍 国外媒体
 
   # === 哔哩哔哩 ===
-  - RULE-SET,BilibiliHMT,📺 哔哩哔哩
-  - RULE-SET,Bilibili,📺 哔哩哔哩
+  #- RULE-SET,BilibiliHMT,📺 哔哩哔哩
+  #- RULE-SET,Bilibili,📺 哔哩哔哩
 
   # === 国内/国外媒体 ===
   - RULE-SET,ChinaMedia,🌏 国内媒体
