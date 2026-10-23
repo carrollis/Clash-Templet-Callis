@@ -151,108 +151,9 @@ proxy-groups:
       - "🇬🇧 英国节点"
       - "🚀 手动切换"
       - "🛩️ 其他备用"
-      - "大流量智选"
+      - "💧 大流量智选"
       - "🟢 直连"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
-
-  - name: "♻️ 自动选择"
-    type: url-test
-    include-all: true
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
-    
-  - name: "🚀 手动切换"
-    type: select
-    include-all: true
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
-  
-  - name: "🔯 故障转移"
-    type: fallback
-    include-all: true
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
-
-  - name: "🔮 负载均衡"
-    type: load-balance
-    include-all: true
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png
-
-  # ============ 特殊固定 IP 组 ============
-  - name: "🏖️ 私人智选"
-    type: url-test
-    include-all: true
-    filter: "(私人|Teddy)"
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Filter.png
-    
-  - name: "🗄️ 订阅更新"
-    type: select
-    include-all: true
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stack.png
-
-  - name: "🛩️ 美国备用"
-    type: select
-    include-all: true
-    filter: "(?i)美|(?i)🇺🇸|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\\bUS\\b|United States"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
-
-  - name: "🛩️ 日本备用"
-    type: select
-    include-all: true
-    filter: "(?i)日本|(?i)🇯🇵|川日|东京|大阪|泉日|埼玉|沪日|深日|\\bJP\\b|Japan"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
-
-  - name: "🛩️ 英国备用"
-    type: select
-    include-all: true
-    filter: "(?i)英|(?i)🇬🇧|(?i)UK|英|英国|不列颠|大不列颠|日不落|\\bUK\\b|\\bEN\\b|Britain"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png
-
-  - name: "🛩️ 香港备用"
-    type: select
-    include-all: true
-    filter: "(?i)港|(?i)🇭🇰|\\bHK\\b|Hong Kong"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
-
-  - name: "🛩️ 台湾备用"
-    type: select
-    include-all: true
-    filter: "(?i)台|(?i)🇹🇼|新北|彰化|\\bTW\\b|Taiwan"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
-
-  - name: "🛩️ 新加坡备用"
-    type: select
-    include-all: true
-    filter: "(?i)新加坡|(?i)🇸🇬|坡|狮城|\\bSG\\b|Singapore"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
-
-  - name: "🌎 IP海外固定"
-    type: select
-    include-all: true
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
-
-  - name: "🇨🇳 IP国内固定"
-    type: select
-    include-all: true
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
-
-  - name: "🛩️ 其他备用"
-    type: select
-    include-all: true
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png
-
-  - name: "📍 私人固定"
-    type: select
-    include-all: true
-    filter: "(私人|Teddy)"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Star.png
 
   # ============ 业务分流组 ============
   - name: "📢 谷歌服务"
@@ -265,7 +166,7 @@ proxy-groups:
       - "🇸🇬 新加坡节点"
       - "🇯🇵 日本节点"
       - "🇰🇷 韩国节点"
-      - "大流量智选"
+      - "💧 大流量智选"
       - "🚀 手动切换"
       - "📍 私人固定"
       - "🛩️ 美国备用"
@@ -277,7 +178,7 @@ proxy-groups:
       - "🛩️ 其他备用"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 
-  - name: "🪩 海外CDN"
+  - name: "🪩 海外CDN-智能"
     type: select
     proxies:
       - "🚀 节点选择"
@@ -288,7 +189,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇰🇷 韩国节点"
       - "🚀 手动切换"
-      - "大流量智选"
+      - "💧 大流量智选"
       - "🛩️ 美国备用"
       - "🛩️ 日本备用"
       - "🛩️ 新加坡备用"
@@ -297,6 +198,37 @@ proxy-groups:
       - "🛩️ 英国备用"
       - "🛩️ 其他备用"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
+
+  - name: "🪩 海外CDN-锁区"
+    type: select
+    proxies:
+      - "🚀 节点选择"
+      - "🇺🇲 美国节点"
+      - "🇭🇰 香港节点"
+      - "🇹🇼 台湾节点"
+      - "🇸🇬 新加坡节点"
+      - "🇯🇵 日本节点"
+      - "🇰🇷 韩国节点"
+      - "🚀 手动切换"
+      - "💧 大流量智选"
+      - "🛩️ 美国备用"
+      - "🛩️ 日本备用"
+      - "🛩️ 新加坡备用"
+      - "🛩️ 香港备用"
+      - "🛩️ 台湾备用"
+      - "🛩️ 英国备用"
+      - "🛩️ 其他备用"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
+
+  - name: "💧 大流量智选"
+    type: select
+    proxies:
+      - "队0－NCloud"
+      - "队1－NCloud"
+      - "队2－NCloud"
+      - "队3－良心云"
+      - "队4－全部大流量机场"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
   - name: "📲 电报消息"
     type: select
@@ -326,7 +258,7 @@ proxy-groups:
       - "🇯🇵 日本节点"
       - "🇺🇲 美国节点"
       - "🇰🇷 韩国节点"
-      - "大流量智选"
+      - "💧 大流量智选"
       - "🛩️ 美国备用"
       - "🛩️ 日本备用"
       - "🛩️ 新加坡备用"
@@ -400,7 +332,7 @@ proxy-groups:
       - "🛩️ 英国备用"
       - "🛩️ 其他备用"
       - "🟢 直连"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO_Max.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO.png
 
   - name: "🎵 Spotify"
     type: select
@@ -635,6 +567,7 @@ proxy-groups:
     type: select
     proxies:
       - "🚀 节点选择"
+      - "💧 大流量智选"
       - "🇺🇲 美国节点"
       - "🇭🇰 香港节点"
       - "🇹🇼 台湾节点"
@@ -829,6 +762,12 @@ proxy-groups:
       - "🛩️ 英国备用"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
 
+  - name: "🗄️ 订阅更新"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stack.png
+
+
   # ============ 拦截与直连组 ============
   - name: "🛑 广告拦截"
     type: select
@@ -858,18 +797,30 @@ proxy-groups:
       - "🚀 手动切换"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
 
-  # ============ 地区节点分组 (url-test 自动择优) ============
-  - name: "大流量智选"
-    type: select
-    proxies:
-      - "队0－NCloud"
-      - "队1－NCloud"
-      - "队2－NCloud"
-      - "队3－良心云"
-      - "队1－吹雪云"
-      - "队1－Nowhere"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
+  - name: "♻️ 自动选择"
+    type: url-test
+    include-all: true
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+  
+  - name: "🔯 故障转移"
+    type: fallback
+    include-all: true
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
 
+  - name: "🔮 负载均衡"
+    type: load-balance
+    include-all: true
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png
+
+  # ============ 地区节点分组 (url-test 自动择优) ============
+ 
   - name: "队0－NCloud"
     type: url-test
     include-all: true
@@ -906,29 +857,93 @@ proxy-groups:
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
     
-  - name: "队1－吹雪云"
+  - name: "队4－全部大流量机场"
     type: url-test
     include-all: true
-    filter: "(?=.*吹雪云)"
+    filter: "队4|吹雪云|Nowhere|一元机场"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
+
+ # ============ 特殊固定 IP 组 ============
     
-  - name: "队1－Nowhere"
+  - name: "🚀 手动切换"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
+    
+  - name: "📍 私人固定"
+    type: select
+    include-all: true
+    filter: "(私人|Teddy)"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Star.png
+      
+  - name: "🏖️ 私人智选"
     type: url-test
     include-all: true
-    filter: "(?=.*Nowhere)"
+    filter: "(私人|Teddy)"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
-    
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Filter.png
+
+  - name: "🛩️ 香港备用"
+    type: select
+    include-all: true
+    filter: "(?i)港|(?i)🇭🇰|\\bHK\\b|Hong Kong"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HK.png
+
+  - name: "🛩️ 台湾备用"
+    type: select
+    include-all: true
+    filter: "(?i)台|(?i)🇹🇼|新北|彰化|\\bTW\\b|Taiwan"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png
+
+  - name: "🛩️ 新加坡备用"
+    type: select
+    include-all: true
+    filter: "(?i)新加坡|(?i)🇸🇬|坡|狮城|\\bSG\\b|Singapore"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png
+  
+  - name: "🛩️ 日本备用"
+    type: select
+    include-all: true
+    filter: "(?i)日本|(?i)🇯🇵|川日|东京|大阪|泉日|埼玉|沪日|深日|\\bJP\\b|Japan"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png
+
+  - name: "🛩️ 美国备用"
+    type: select
+    include-all: true
+    filter: "(?i)美|(?i)🇺🇸|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\\bUS\\b|United States"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png
+
+  - name: "🛩️ 英国备用"
+    type: select
+    include-all: true
+    filter: "(?i)英|(?i)🇬🇧|(?i)UK|英|英国|不列颠|大不列颠|日不落|\\bUK\\b|\\bEN\\b|Britain"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UK.png  
+
+  - name: "🌎 IP海外固定"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
+
+  - name: "🇨🇳 IP国内固定"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
+
+  - name: "🛩️ 其他备用"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png
+
   - name: "🇭🇰 香港节点"
     type: url-test
     include-all: true
     filter: "(?i)🇭🇰|香港|港|\\bHK\\b|Hong"
-    exclude-filter: "队"
+    exclude-filter: "队[0-9]"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -937,8 +952,8 @@ proxy-groups:
   - name: "🇹🇼 台湾节点"
     type: url-test
     include-all: true
-    filter: "(?i)🇹🇼|台湾|台灣|台|\\bTW\\b|Taiwan"
-    exclude-filter: "队"
+    filter: "(?i)台|(?i)🇹🇼|台湾|台灣|新北|彰化|\\bTW\\b|Taiwan"
+    exclude-filter: "队[0-9]"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -948,7 +963,7 @@ proxy-groups:
     type: url-test
     include-all: true
     filter: "(?i)🇸🇬|新加坡|坡|狮城|\\bSG\\b|Singapore"
-    exclude-filter: "队"
+    exclude-filter: "队[0-9]"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -958,7 +973,7 @@ proxy-groups:
     type: url-test
     include-all: true
     filter: "(?i)🇯🇵|日本|东京|东京|\\bJP\\b|Japan"
-    exclude-filter: "队"
+    exclude-filter: "队[0-9]"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -968,7 +983,7 @@ proxy-groups:
     type: url-test
     include-all: true
     filter: "(?i)🇰🇷|韩|韓|首尔|\\bKR\\b|Korea"
-    exclude-filter: "队"
+    exclude-filter: "队[0-9]"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -978,7 +993,7 @@ proxy-groups:
     type: url-test
     include-all: true
     filter: "(?i)🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\\bUS\\b|United States"
-    exclude-filter: "队"
+    exclude-filter: "队[0-9]"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 150
@@ -988,7 +1003,7 @@ proxy-groups:
     type: url-test
     include-all: true
     filter: "(?i)🇬🇧|英|英国|不列颠|大不列颠|\\bUK\\b|\\bEN\\b|Britain"
-    exclude-filter: "队"
+    exclude-filter: "队[0-9]"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -1099,9 +1114,13 @@ rule-providers:
     url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-Tiktok%20Login"
 
  # === CDN媒体资源 ===
-  CDN-Media:
+  CDN-Media-smart:
     <<: *class
     url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-CDN%20MediaNetwork"
+
+  CDN-Media-region:
+    <<: *class
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-CDN%20MediaNetwork-region"
 
   # === 谷歌服务 ===
   GoogleFCM:
@@ -1262,13 +1281,9 @@ rule-providers:
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list"
 
   # === AI服务 ===
-  OpenAI-1:
+  OpenAI:
     <<: *class
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
-    
-  OpenAI-2:
-    <<: *class
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/OpenAi.list"
 
   Discord:
     <<: *class
@@ -1281,11 +1296,6 @@ rule-providers:
   Gemini:
     <<: *class
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list"
-
-  General-AI:
-    <<: *class
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/AI.list"
-
 
   # === AbemaTV ===
   Abema:
@@ -1414,7 +1424,8 @@ rules:
   - RULE-SET,Subscribe-Proxy,🗄️ 订阅更新
   
   # === 流媒体/服务IP锁定 ===
-  - RULE-SET,CDN-Media,🪩 海外CDN  
+  - RULE-SET,CDN-Media-region,🪩 海外CDN-锁区
+  - RULE-SET,CDN-Media-smart,🪩 海外CDN-智能
   - RULE-SET,GlobalMediaLogin,🔑 流媒体登录
   - RULE-SET,YouTube-Login,🔑 流媒体登录
   - RULE-SET,YouTube,🔑 流媒体登录
@@ -1506,12 +1517,10 @@ rules:
   - RULE-SET,NetEaseMusic,🎶 网易音乐
 
   # === AI服务 ===
-  - RULE-SET,OpenAI-1,🔮 AI服务
-  - RULE-SET,OpenAI-2,🔮 AI服务
+  - RULE-SET,OpenAI,🔮 AI服务
   - RULE-SET,Discord,🔮 AI服务
   - RULE-SET,Claude,🔮 AI服务
   - RULE-SET,Gemini,🔮 AI服务
-  - RULE-SET,General-AI,🔮 AI服务
 
   # === AbemaTV ===
   - RULE-SET,Abema,🎶 AbemaTV
