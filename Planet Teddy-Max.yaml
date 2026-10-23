@@ -1404,6 +1404,11 @@ rule-providers:
     <<: *class
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list"
 
+  # === 国内直连(甄别到无需走代理) ===
+  Domestic-route:
+    <<: *class
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-DomesticRoute"
+    
   # === GFW/代理 ===
   ProxyGFWlist:
     <<: *class
@@ -1569,6 +1574,7 @@ rules:
   - RULE-SET,ProxyGFWlist,🚀 节点选择
 
   # === 国内直连 ===
+  - RULE-SET,Domestic-route,🎯 全球直连
   - RULE-SET,ChinaDomain,🎯 全球直连
   - RULE-SET,ChinaCompanyIp,🎯 全球直连
   - RULE-SET,Download,🎯 全球直连
