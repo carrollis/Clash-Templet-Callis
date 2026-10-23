@@ -228,7 +228,7 @@ proxy-groups:
       - "队2－NCloud"
       - "队3－良心云"
       - "队4－吹雪云"
-      - "队4－Nowhere"
+      - "队4－全部大流量机场"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
   - name: "📲 电报消息"
@@ -858,19 +858,10 @@ proxy-groups:
     tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
     
-  - name: "队4－吹雪云"
+  - name: "队4－全部大流量机场"
     type: url-test
     include-all: true
-    filter: "(?=.*吹雪云)"
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
-    
-  - name: "队4－Nowhere"
-    type: url-test
-    include-all: true
-    filter: "(?=.*Nowhere)"
+    filter: "队4|吹雪云|Nowhere|一元机场"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
