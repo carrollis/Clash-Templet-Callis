@@ -227,7 +227,6 @@ proxy-groups:
       - "队1－NCloud"
       - "队2－NCloud"
       - "队3－良心云"
-      - "队4－吹雪云"
       - "队4－全部大流量机场"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
