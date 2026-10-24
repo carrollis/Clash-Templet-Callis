@@ -589,6 +589,7 @@ proxy-groups:
     type: select
     proxies:
       - "🚀 节点选择"
+      - "📍 私人固定"
       - "🇺🇲 美国节点"
       - "🇭🇰 香港节点"
       - "🇹🇼 台湾节点"
