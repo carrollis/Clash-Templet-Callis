@@ -997,7 +997,7 @@ proxy-groups:
     exclude-filter: "队[0-9]"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
-    tolerance: 150
+    tolerance: 50
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
 
   - name: "🇬🇧 英国节点"
