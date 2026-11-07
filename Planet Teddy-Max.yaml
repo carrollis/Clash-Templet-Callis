@@ -155,28 +155,11 @@ proxy-groups:
       - "🟢 直连"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 
-  # ============ 业务分流组 ============
-  - name: "📢 谷歌服务"
+  # ============ 常用选择组 ============  
+  - name: "🚀 手动切换"
     type: select
-    proxies:
-      - "🚀 节点选择"
-      - "🇺🇲 美国节点"
-      - "🇭🇰 香港节点"
-      - "🇹🇼 台湾节点"
-      - "🇸🇬 新加坡节点"
-      - "🇯🇵 日本节点"
-      - "🇰🇷 韩国节点"
-      - "💧 大流量智选"
-      - "🚀 手动切换"
-      - "📍 私人固定"
-      - "🛩️ 美国备用"
-      - "🛩️ 日本备用"
-      - "🛩️ 新加坡备用"
-      - "🛩️ 香港备用"
-      - "🛩️ 台湾备用"
-      - "🛩️ 英国备用"
-      - "🛩️ 其他备用"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
 
   - name: "🪩 海外CDN-智能"
     type: select
@@ -230,22 +213,6 @@ proxy-groups:
       - "队4－全部大流量机场"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
-  - name: "📲 电报消息"
-    type: select
-    proxies:
-      - "🚀 节点选择"
-      - "♻️ 自动选择"
-      - "🇸🇬 新加坡节点"
-      - "🇭🇰 香港节点"
-      - "🇹🇼 台湾节点"
-      - "🇯🇵 日本节点"
-      - "🇺🇲 美国节点"
-      - "🇰🇷 韩国节点"
-      - "🚀 手动切换"
-      - "🛩️ 其他备用"
-      - "🟢 直连"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
-
   - name: "🔑 流媒体登录"
     type: select
     proxies:
@@ -269,6 +236,13 @@ proxy-groups:
       - "🚀 手动切换"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
 
+ - name: "📍 私人固定"
+    type: select
+    include-all: true
+    filter: "(私人|Teddy)"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Star.png
+
+
   - name: "🔐 国内IP锁定"
     type: select
     proxies:
@@ -288,6 +262,50 @@ proxy-groups:
       - "📍 私人固定"
       - "🟢 直连"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+
+  - name: "🗄️ 订阅更新"
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stack.png
+
+  # ============ 业务分流组 ============
+  - name: "📢 谷歌服务"
+    type: select
+    proxies:
+      - "🚀 节点选择"
+      - "🇺🇲 美国节点"
+      - "🇭🇰 香港节点"
+      - "🇹🇼 台湾节点"
+      - "🇸🇬 新加坡节点"
+      - "🇯🇵 日本节点"
+      - "🇰🇷 韩国节点"
+      - "💧 大流量智选"
+      - "🚀 手动切换"
+      - "📍 私人固定"
+      - "🛩️ 美国备用"
+      - "🛩️ 日本备用"
+      - "🛩️ 新加坡备用"
+      - "🛩️ 香港备用"
+      - "🛩️ 台湾备用"
+      - "🛩️ 英国备用"
+      - "🛩️ 其他备用"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+
+  - name: "📲 电报消息"
+    type: select
+    proxies:
+      - "🚀 节点选择"
+      - "♻️ 自动选择"
+      - "🇸🇬 新加坡节点"
+      - "🇭🇰 香港节点"
+      - "🇹🇼 台湾节点"
+      - "🇯🇵 日本节点"
+      - "🇺🇲 美国节点"
+      - "🇰🇷 韩国节点"
+      - "🚀 手动切换"
+      - "🛩️ 其他备用"
+      - "🟢 直连"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
 
   - name: "🐹 Disney+"
     type: select
@@ -763,12 +781,6 @@ proxy-groups:
       - "🛩️ 英国备用"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
 
-  - name: "🗄️ 订阅更新"
-    type: select
-    include-all: true
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stack.png
-
-
   # ============ 拦截与直连组 ============
   - name: "🛑 广告拦截"
     type: select
@@ -868,18 +880,7 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png
 
  # ============ 特殊固定 IP 组 ============
-    
-  - name: "🚀 手动切换"
-    type: select
-    include-all: true
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
-    
-  - name: "📍 私人固定"
-    type: select
-    include-all: true
-    filter: "(私人|Teddy)"
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Star.png
-      
+ 
   - name: "🏖️ 私人智选"
     type: url-test
     include-all: true
@@ -1151,6 +1152,16 @@ rule-providers:
   YouTubeMusic:
     <<: *class
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTubeMusic/YouTubeMusic.list"
+
+  # === 海外交易 ===
+  Trade:
+    <<: *class
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-Trade"
+  
+  # === 其他服务 ===
+  Others-smart:
+    <<: *class
+    url: "https://raw.githubusercontent.com/carrollis/ACL4SSR-Carrollis/refs/heads/master/Clash/Ruleset/Addi-Others-smart"
 
   # === 国外媒体 ===
   IPTVGlobalSpecific:
@@ -1437,6 +1448,7 @@ rules:
   - RULE-SET,YouTube,🔑 流媒体登录
   - RULE-SET,YouTubeMusic,🔑 流媒体登录
   - RULE-SET,Tiktok-Login,📺 Tiktok
+  - RULE-SET,Trade,🚀 节点选择
 
   # === 谷歌服务 ===
   - RULE-SET,GoogleFCM,📢 谷歌服务
