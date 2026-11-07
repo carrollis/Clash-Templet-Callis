@@ -236,7 +236,7 @@ proxy-groups:
       - "🚀 手动切换"
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
 
- - name: "📍 私人固定"
+  - name: "📍 私人固定"
     type: select
     include-all: true
     filter: "(私人|Teddy)"
